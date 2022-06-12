@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Form from "./Form";
 import Todo from "./Todo";
 import { MdDeleteOutline } from "react-icons/md";
