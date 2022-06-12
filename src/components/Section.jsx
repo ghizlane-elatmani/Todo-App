@@ -64,17 +64,19 @@ const Section = ({
                 />
               ))}
           </div>
-          <div className="btn-to-the-right">
-            <button
-              className="btn-deleta-all"
-              onClick={() => {
-                deleteAllHandler();
-              }}
-            >
-              <MdDeleteOutline />
-              delete all
-            </button>
-          </div>
+          {todoList.filter((todo) => todo.completed === true).length > 0 ? (
+            <div className="btn-to-the-right">
+              <button
+                className="btn-deleta-all"
+                onClick={() => {
+                  deleteAllHandler();
+                }}
+              >
+                <MdDeleteOutline />
+                delete all
+              </button>
+            </div>
+          ) : null}
         </div>
       ) : null}
     </div>

@@ -6,7 +6,7 @@ const Todo = ({ todo, active, completedHandler, deleteHandler }) => {
     <div className="todo-container">
       <div className="checkbox-container">
         <input
-          id="cb1"
+          id={todo.id}
           className="input-check"
           type="checkbox"
           onChange={(e) => {
@@ -14,7 +14,7 @@ const Todo = ({ todo, active, completedHandler, deleteHandler }) => {
           }}
           checked={todo.completed}
         />
-        <label htmlFor="cb1" className={`${todo.completed ? "slash" : ""}`}>
+        <label htmlFor={todo.id} className={`${todo.completed ? "slash" : ""}`}>
           {todo.text}
         </label>
       </div>
