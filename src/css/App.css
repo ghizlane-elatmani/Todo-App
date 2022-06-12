@@ -1,0 +1,192 @@
+.App {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+}
+
+.heading-1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.045em;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container {
+  min-height: 80vh;
+}
+
+/* ====== NAVIGATION ====== */
+.nav {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  position: relative;
+
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #2f80ed;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 4px;
+  border-bottom: 4px solid #2f80ed;
+  border-radius: 4px;
+}
+
+/* ====== FORM ====== */
+.form {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  display: none;
+}
+
+.addInput {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.addInput::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #828282;
+}
+
+.btn-add {
+  padding: 1rem 1.5rem;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px 0px #7fb1f366;
+  border-radius: 12px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  border: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox-container label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+  box-shadow: 0px 2px 6px 0px #7fb1f366;
+  background: #2f80ed;
+}
+
+.input-check {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.todo-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-container svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0px;
+  cursor: pointer;
+  color: #bdbdbd;
+}
+
+.slash {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.btn-to-the-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-deleta-all {
+  background: #eb5757;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.btn-deleta-all svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 1rem 0;
+  color: #b9bdcf;
+  text-align: center;
+}
+
+.footer span {
+  font-weight: 700;
+}
